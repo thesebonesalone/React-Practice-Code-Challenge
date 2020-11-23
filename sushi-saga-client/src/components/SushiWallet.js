@@ -10,7 +10,6 @@ export default class SushiWallet extends Component {
 
     handleClick = (e) => {
         e.preventDefault()
-        console.log(e.target.parentNode.children[0].children[0].value)
         this.props.updateMoney(this.state.value)
         this.setState({
             value: 0
